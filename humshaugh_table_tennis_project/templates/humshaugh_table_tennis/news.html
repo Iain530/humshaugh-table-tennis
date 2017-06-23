@@ -1,0 +1,76 @@
+{% extends 'humshaugh_table_tennis/base.html' %}
+<!DOCTYPE html>
+{% load staticfiles %}
+
+{% block title_block %}
+ - News
+{% endblock %}
+
+{% block body_block %}
+<div class="multi_body_block" id="news_block_1">
+	<h2>News</h2>
+	{% if posts %}
+		{% for post in posts %}
+			<div class="border-t">
+				<h4><big>{{ post.title }}</big> - {{ post.date }}</h4>
+				{{ post.content }}
+			</div>
+		{% endfor %}
+		
+		<div class="border-tb" style="text-align: center;">
+			{% if page > 1 %}
+				<a href="{% url 'humshaugh_table_tennis:news' page|add:'-1' %}">previous</a>
+				&nbsp;
+			{% endif %}
+			
+			{% if page > 3 %}
+			. . .&nbsp;
+			{% endif %}
+			
+			{% if page > 2 %}
+				<a href="{% url 'humshaugh_table_tennis:news' page|add:'-2' %}">{{ page|add:'-2' }}</a>
+				&nbsp;
+			{% endif %}
+			
+			{% if page > 1 %}
+				<a href="{% url 'humshaugh_table_tennis:news' page|add:'-1' %}">{{ page|add:'-1' }}</a>
+				&nbsp;
+			{% endif %}
+			
+			<b>{{ page }}</b>
+			&nbsp;
+			
+			{% if page < last_page %}
+				<a href="{% url 'humshaugh_table_tennis:news' page|add:'1' %}">{{ page|add:'1' }}</a>
+				&nbsp;
+			{% endif %}
+			
+			{% if page < last_page|add:'-1' %}
+				<a href="{% url 'humshaugh_table_tennis:news' page|add:'2' %}">{{ page|add:'2' }}</a>
+				&nbsp;
+			{% endif %}
+			
+			{% if page < last_page|add:'-2' %}
+			. . .
+			&nbsp;
+			{% endif %}
+			
+			{% if page < last_page %}
+				<a href="{% url 'humshaugh_table_tennis:news' page|add:'1' %}">next</a>
+			{% endif %}
+
+		</div>
+		
+	{% else %}
+		<div class="border-tb" style="text-align: center">
+			There is no news!
+		</div>
+	{% endif %}
+</div>
+
+<div class="multi_body_block" id="news_block_2">
+	<div id="fb-widget">
+		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnorthumbriatabletennis%2F&tabs=timeline&width=300&height=700&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="300" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="false"></iframe>
+	</div>
+</div>
+{% endblock %}

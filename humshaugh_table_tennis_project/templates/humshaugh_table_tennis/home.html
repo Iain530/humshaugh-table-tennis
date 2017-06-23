@@ -1,0 +1,27 @@
+{% extends 'humshaugh_table_tennis/base.html' %}
+<!DOCTYPE html>
+{% load staticfiles %}
+
+{% block title_block %}
+ - Home
+{% endblock %}
+
+{% block body_block %}
+<div class="body_block">
+	<h2>Welcome</h2>
+	<div class="border-t">
+		Humshaugh Table Tennis Club (HTTC) has been formed to encourage and promote this healthy sport at all levels of ages (Over 10 years old) and abilities.
+		<br><br>
+		Our club meetings are held on most (but not all) Thursdays in Humshaugh Village Hall which is spacious and well lighted making it very suitable for this sport.
+		<br><br>
+		We are currently seeking new members from Humshaugh and the surrounding Tynedale Towns and Villages.
+		<br><br>
+		Please come and visit us to see the facilities and decide whether you are interested in joining the club.
+		<br><br>
+		Chairperson
+	</div>
+	<div class="border-tb">
+		<img id="villagehall" src="{% static 'images/villagehall.jpg' %}" width="570" height="333">
+	</div>
+</div>
+{% endblock %}

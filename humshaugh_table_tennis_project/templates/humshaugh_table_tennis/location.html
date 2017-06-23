@@ -1,0 +1,33 @@
+{% extends 'humshaugh_table_tennis/base.html' %}
+<!DOCTYPE html>
+{% load staticfiles %}
+
+{% block title_block %}
+ - Location
+{% endblock %}
+
+{% block body_block %}
+<div class="body_block">
+    <h2>Location</h2>
+	<div class="border-tb">
+		<div id="map" allowTransparency="false"></div>
+		<p id="google-maps-link"><a href="https://www.google.com/maps/dir/Current+Location/Humshaugh+Table+Tennis+Club+Humshaugh+NE46+4AD" target="_blank">Get directions</a></p>
+		<script>
+		  function initMap() {
+			var hums = {lat: 55.0359, lng: -2.1267};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 16,
+			  center: hums
+			});
+			var marker = new google.maps.Marker({
+			  position: hums,
+			  map: map
+			});
+		  }
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgoGScDQs39l63LWPE56v818AVjwTG3Zw&callback=initMap">
+		</script>
+	</div>
+</div>
+{% endblock %}

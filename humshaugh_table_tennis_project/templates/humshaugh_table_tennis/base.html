@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title>
+		Humshaugh Table Tennis
+		{% block title_block %}
+		{% endblock %}
+	</title>
+</head>
+
+<!-- background="{% static "/images/background.jpg" %}" -->
+<body background="{% static '/images/background.jpg' %}">
+
+	<ul id="sidebar">
+		<li><a href="{% url 'humshaugh_table_tennis:home' %}">Home</a></li>
+		<li><a href="{% url 'humshaugh_table_tennis:club_nights' %}">Club Nights</a></li>
+		<li><a href="{% url 'humshaugh_table_tennis:location' %}">Location</a></li>
+		<li><a href="{% url 'humshaugh_table_tennis:news' 1 %}">News</a></li>
+		<li><a href="{% url 'humshaugh_table_tennis:rules' %}">Rules</a></li>
+		<li><a href="{% url 'humshaugh_table_tennis:contact_us' %}">Contact Us</a></li>
+	</ul>
+	
+	<div class="body_block">
+		<h1>Humshaugh Table Tennis Club</h1>
+		<h3>Email: <a href="mailto:enquiries@humshaughtabletennis.org">enquiries@humshaughtabletennis.org</a></h3>
+	</div>
+	
+	<div>
+	{% block body_block %}
+	{% endblock %}
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="{% static 'javascript/jquery.js' %}"></script>
+</body>
+</html>

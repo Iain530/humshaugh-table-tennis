@@ -1,0 +1,189 @@
+/* GENERAL-------------------------------------------- */
+
+h1 {
+	text-align: center;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	line-height: 0px;
+
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 25px;
+}
+
+h3 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 0;
+}
+
+body {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+}
+
+div.border-tb {
+	border-top: 1px solid #858280;
+	border-bottom: 1px solid #858280;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+div.border-t {
+	border-top: 1px solid #858280;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+div.body_block {
+	margin: 35px 40px 50px 250px;
+	background-color: rgba(46,45,44, 0.9); /* 2E2D2C */
+	font-size: 16px;
+	color: white;
+	padding: 15px 25px;
+	border-radius: 5px;
+}
+
+
+div.body_block a, div.multi_body_block a {
+	color: white;
+	transition: 0.1s;
+}
+
+div.body_block a:hover, div.multi_body_block a:hover {
+	color: #d11002;
+	transition: 0.1s;
+}
+
+/* HOME -------------------------------------------- */
+
+img#villagehall {
+	display: block;
+	margin: 0 auto;
+	/* border: 1px solid #7198ab; */
+}
+
+/* CLUB NIGHTS ------------------------------------- */
+
+table#club-nights {
+	
+}
+
+/* NEWS --------------------------------------------- */
+
+div#fb-widget {
+	margin: 10px;
+	overflow:auto;
+}
+
+@media screen and (min-width: 1357px) {
+	div.multi_body_block {
+		background-color: rgba(46,45,44, 0.9);
+		font-size: 16px;
+		color: white;
+		border-radius: 5px;
+		display: inline-block;
+	}
+		
+	div#news_block_1 {
+		margin: 0px 10px 25px 250px;
+		width: 50%;
+		padding: 15px 25px;
+		float: left;
+	}
+
+	div#news_block_2 {
+		float:right;
+		margin-right: 40px;
+	}
+}
+
+@media screen and (max-width: 1356px) {
+	div.multi_body_block  {
+		margin: 35px 40px 50px 250px;
+		background-color: rgba(46,45,44, 0.9);
+		font-size: 16px;
+		color: white;
+		padding: 15px 25px;
+		border-radius: 5px;
+	}
+	
+	div#news_block_2 {
+		display: none;
+	}
+}
+
+/* LOCATION----------------------------------------- */
+
+div#map {
+	height: 400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+p#google-maps-link {
+	margin-top: 15px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* CONTACT-US----------------------------------------- */
+
+table#contact-table {
+	width: 70%;
+	margin: 0 auto;
+}
+
+table#contact-table th {
+	text-align: left;
+}
+
+
+/* SIDEBAR-------------------------------------------- */
+
+ul#sidebar {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	list-style-type: none;
+	background-color: #2e2d2c;
+	margin: 0;
+	padding: 50px 10px 10px 10px;
+	opacity: 0.9;
+	height: 100%;
+	width: 180px;
+}
+
+
+ul#sidebar li {
+	padding: 20px;
+	height: 25px;
+	
+}
+
+ul#sidebar li a {
+	text-decoration: none;
+	font-size: 23px;
+	color: white;
+	transition: 0.1s;
+}
+
+ul#sidebar li a:hover {
+	font-size: 24px;
+	color: #d11002;
+	transition: 0.1s;
+}
