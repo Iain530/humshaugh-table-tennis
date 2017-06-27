@@ -1,0 +1,3 @@
+*.pyc
+*.sqlite3
+\humshaugh_table_tennis_project\humshaugh_table_tennis\migrations\*
