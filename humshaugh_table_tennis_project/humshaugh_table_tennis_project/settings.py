@@ -19,7 +19,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [ ]
+STATICFILES_DIRS = [ STATIC_DIR ]
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,7 +31,7 @@ SECRET_KEY = 's(p!!_8m$2a&1p-6+2%djsh7j*!c3qsk)iu*9m*fdd4=3p@0z_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['humshaughtabletennis.pythonanywhere.com', 'www.humshaughtabletennis.org']
+ALLOWED_HOSTS = ['127.0.0.1', 'humshaughtabletennis.pythonanywhere.com', 'www.humshaughtabletennis.org']
 
 
 # Application definition
@@ -127,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

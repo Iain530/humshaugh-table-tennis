@@ -1,5 +1,9 @@
 /* GENERAL-------------------------------------------- */
 
+html {
+	min-width: 1080px;
+ }
+
 h1 {
 	text-align: center;
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
