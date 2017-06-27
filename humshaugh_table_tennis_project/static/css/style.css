@@ -79,7 +79,7 @@ img#villagehall {
 /* CLUB NIGHTS ------------------------------------- */
 
 table#club-nights {
-	
+
 }
 
 /* NEWS --------------------------------------------- */
@@ -97,7 +97,7 @@ div#fb-widget {
 		border-radius: 5px;
 		display: inline-block;
 	}
-		
+
 	div#news_block_1 {
 		margin: 0px 10px 25px 220px;
 		width: 50%;
@@ -120,7 +120,7 @@ div#fb-widget {
 		padding: 15px 25px;
 		border-radius: 5px;
 	}
-	
+
 	div#news_block_2 {
 		display: none;
 	}
@@ -172,7 +172,7 @@ ul#sidebar {
 ul#sidebar li {
 	padding: 20px;
 	height: 25px;
-	
+
 }
 
 ul#sidebar li a {
