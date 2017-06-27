@@ -13,7 +13,7 @@
 		{% for post in posts %}
 			<div class="border-t">
 				<h4><big>{{ post.title }}</big> - {{ post.date }}</h4>
-				{{ post.content }}
+				{{ post.content|linebreaks }}
 			</div>
 		{% endfor %}
 		

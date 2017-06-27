@@ -49,7 +49,7 @@ div.border-t {
 }
 
 div.body_block {
-	margin: 35px 40px 50px 250px;
+	margin: 35px 40px 50px 220px;
 	background-color: rgba(46,45,44, 0.9); /* 2E2D2C */
 	font-size: 16px;
 	color: white;
@@ -89,7 +89,7 @@ div#fb-widget {
 	overflow:auto;
 }
 
-@media screen and (min-width: 1357px) {
+@media screen and (min-width: 1327px) {
 	div.multi_body_block {
 		background-color: rgba(46,45,44, 0.9);
 		font-size: 16px;
@@ -99,7 +99,7 @@ div#fb-widget {
 	}
 		
 	div#news_block_1 {
-		margin: 0px 10px 25px 250px;
+		margin: 0px 10px 25px 220px;
 		width: 50%;
 		padding: 15px 25px;
 		float: left;
@@ -111,9 +111,9 @@ div#fb-widget {
 	}
 }
 
-@media screen and (max-width: 1356px) {
+@media screen and (max-width: 1326px) {
 	div.multi_body_block  {
-		margin: 35px 40px 50px 250px;
+		margin: 35px 40px 50px 220px;
 		background-color: rgba(46,45,44, 0.9);
 		font-size: 16px;
 		color: white;
@@ -162,10 +162,10 @@ ul#sidebar {
 	list-style-type: none;
 	background-color: #2e2d2c;
 	margin: 0;
-	padding: 50px 10px 10px 10px;
+	padding: 30px 0px 10px 0px;
 	opacity: 0.9;
 	height: 100%;
-	width: 180px;
+	width: 170px;
 }
 
 

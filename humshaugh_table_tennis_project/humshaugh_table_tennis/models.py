@@ -9,7 +9,7 @@ class News(models.Model):
 
     #fields
     title = models.CharField(max_length=MAX_TITLE_LENGTH)
-    content = models.CharField(max_length=MAX_CONTENT_LENGTH)
+    content = models.TextField(max_length=MAX_CONTENT_LENGTH)
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
