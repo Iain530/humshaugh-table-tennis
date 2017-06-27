@@ -19,7 +19,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
-STATICFILES_DIRS = [STATIC_DIR, ]
+STATICFILES_DIRS = [ ]
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,9 +29,9 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 SECRET_KEY = 's(p!!_8m$2a&1p-6+2%djsh7j*!c3qsk)iu*9m*fdd4=3p@0z_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['humshaughtabletennis.pythonanywhere.com', 'www.humshaughtabletennis.org']
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'humshaugh_table_tennis',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'GMT'
 
 USE_I18N = True
 
@@ -127,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR, ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

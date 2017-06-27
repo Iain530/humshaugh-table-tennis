@@ -13,54 +13,54 @@
 		{% for post in posts %}
 			<div class="border-t">
 				<h4><big>{{ post.title }}</big> - {{ post.date }}</h4>
-				{{ post.content }}
+				{{ post.content|linebreaks }}
 			</div>
 		{% endfor %}
-		
+
 		<div class="border-tb" style="text-align: center;">
 			{% if page > 1 %}
 				<a href="{% url 'humshaugh_table_tennis:news' page|add:'-1' %}">previous</a>
 				&nbsp;
 			{% endif %}
-			
+
 			{% if page > 3 %}
 			. . .&nbsp;
 			{% endif %}
-			
+
 			{% if page > 2 %}
 				<a href="{% url 'humshaugh_table_tennis:news' page|add:'-2' %}">{{ page|add:'-2' }}</a>
 				&nbsp;
 			{% endif %}
-			
+
 			{% if page > 1 %}
 				<a href="{% url 'humshaugh_table_tennis:news' page|add:'-1' %}">{{ page|add:'-1' }}</a>
 				&nbsp;
 			{% endif %}
-			
+
 			<b>{{ page }}</b>
 			&nbsp;
-			
+
 			{% if page < last_page %}
 				<a href="{% url 'humshaugh_table_tennis:news' page|add:'1' %}">{{ page|add:'1' }}</a>
 				&nbsp;
 			{% endif %}
-			
+
 			{% if page < last_page|add:'-1' %}
 				<a href="{% url 'humshaugh_table_tennis:news' page|add:'2' %}">{{ page|add:'2' }}</a>
 				&nbsp;
 			{% endif %}
-			
+
 			{% if page < last_page|add:'-2' %}
 			. . .
 			&nbsp;
 			{% endif %}
-			
+
 			{% if page < last_page %}
 				<a href="{% url 'humshaugh_table_tennis:news' page|add:'1' %}">next</a>
 			{% endif %}
 
 		</div>
-		
+
 	{% else %}
 		<div class="border-tb" style="text-align: center">
 			There is no news!
